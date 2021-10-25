@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>Система оценки рисков</title>
+        <style>
+
+			.back input{
+				position: absolute;
+				left: 60px;
+				top: 25px;
+				
+				width: 50px;
+				height: 40px;
+				
+				background: url(.png);
+			}.back img{
+				position: absolute;
+				left: 60px;
+				top: 25px;
+				
+				width: 50px;
+				height: 40px;
+				
+				background: url(.png);
+			}
+		
+			.share input{
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				left: 1067px;
+				top: 650px;
+
+				background: url(.png);
+				border-radius: 460px;
+			}
+		
+			.issue p {
+				position: absolute;
+				width: 210px;
+				height: 105px;
+				left: 640px;
+				top: 2px;
+
+				font-family: Sacramento;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 72px;
+				line-height: 105px;
+
+				color: #121212;
+			}
+		
+		
+			.share img{
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				left: 1067px;
+				top: 650px;
+
+				background: url(.png);
+				border-radius: 460px;
+			}
+			.share p{
+				position: absolute;
+				width: 273px;
+				height: 35px;
+				left: 1097px;
+				top: 633px;
+
+				font-family: Sacramento;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 35px;
+				/* identical to box height */
+
+				text-align: center;
+
+				color: #121212;
+
+				text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			}
+			
+			.tag-one {
+				position: absolute;
+				width: 236px;
+				height: 70px;
+				left: 62px;
+				top: 217px;
+
+				font-family: Sacramento;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 35px;
+				text-align: left;
+
+				color: #121212;
+			}
+			.cost-one {
+				position: absolute;
+				width: 296px;
+				height: 70px;
+				left: 862px;
+				top: 207px;
+
+				font-family: Sacramento;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 35px;
+				text-align: left;
+				
+				white-space: normal;
+
+				color: #121212;
+			}
+
+			.tag-two {
+				position: absolute;
+				width: 236px;
+				height: 70px;
+				left: 62px;
+				top: 314px;
+
+				font-family: Sacramento;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 35px;
+				text-align: left;
+
+				color: #121212;
+			}
+			.cost-two {
+				position: absolute;
+				width: 250px;
+				height: 70px;
+				left: 862px;
+				top: 309px;
+
+				font-family: Sacramento;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 35px;
+				text-align: left;
+				
+				white-space: normal;
+
+				color: #121212;
+			}
+
+			.tag-solvation {
+				position: absolute;
+				width: 236px;
+				height: 70px;
+				left: 62px;
+				top: 477px;
+
+				font-family: Sacramento;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 35px;
+				text-align: left;
+
+				color: #121212;
+			}
+			
+			.rect1 p {
+				position: absolute;
+				width: 350px;
+				height: 50px;
+				left: 346px;
+				top: 212px;
+
+				background: #9DB802;
+				
+				font-family: Sacramento;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 24px;
+				line-height: 35px;
+
+				text-align: center;
+
+				color: #121212;
+				
+				border-radius: 5px;
+			}
+			
+			.sum-one p {
+				position: absolute;
+				width: 310px;
+				height: 50px;
+				left: 1176px;
+				top: 212px;
+
+				background: #BAEEFF;
+				
+				font-family: Sacramento;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 24px;
+				line-height: 35px;
+
+				text-align: center;
+
+				color: #121212;
+				
+				border-radius: 5px;
+			}
+			
+			.rect2 p {
+				position: absolute;
+				width: 350px;
+				height: 50px;
+				left: 346px;
+				top: 312px;
+
+				background: #E70029;
+				
+				font-family: sacramento;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 24px;
+				line-height: 35px;
+
+				text-align: center;
+
+				color: #121212;
+				
+				border-radius: 5px;
+			}
+			
+			.sum-two p {
+				position: absolute;
+				width: 310px;
+				height: 50px;
+				left: 1176px;
+				top: 312px;
+
+				background: #BAEEFF;
+				
+				font-family: sacramento;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 24px;
+				line-height: 35px;
+
+				text-align: center;
+
+				color: #121212;
+				
+				border-radius: 5px;
+			}
+			
+			
+			
+			.solvation {
+				position: absolute;
+				width: 843px;
+				height: 95px;
+				left: 346px;
+				top: 474px;
+
+				background: #D7DCDD;
+				
+				font-family: Sacramento;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 35px;
+				
+				text-align: center;
+
+				color: #121212;
+				
+				border-radius: 5px;
+			}
+        </style>
+</head>
+
+<body>
+
+	<div class="back">
+		<img src="../resources/back.png" >
+		<input type="button" onclick="location.href='4.html';">
+	</div>
+
+	<div class="issue">
+		<p>Отчет</p>
+	</div>
+	
+	<div class="tag-one">
+		<p>Желаемое состояние</p>
+	</div>
+	<div class="cost-one">
+		<p>Стоимость обеспечения непрерывности, руб.</p>
+	</div>
+	<div class="sum-one">
+		<p>1 250 000</p>
+	</div>
+	
+	<div class="tag-two">
+		<p>Текущее состояние</p>
+	</div>
+	<div class="cost-two">
+		<p>Потенциальный ущерб, руб.</p>
+	</div>
+	<div class="sum-two">
+		<p>7 800 000</p>
+	</div>
+
+	<div class="tag-solvation">
+		<p>Решение ситуации</p>
+	</div>
+	<div class="solvation">
+		<p>Выделение резервных мощностей под нужды бизнес-процесса</p>
+	</div>
+	
+	<div class="rect1">
+		<p>Управ</p>
+	</div>
+	
+	<div class="rect2">
+		<p>Не управ</p>
+	</div>
+	
+	<div class="share">
+		<img src="../resources/share.png" >
+		<input type="button" >
+		<p>Распечатать отчет</p>
+	</div>
+	
+</body>
+</html>

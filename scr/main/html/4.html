@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>Система оценки рисков</title>
+        <style>
+		
+			.back input{
+				position: absolute;
+				left: 60px;
+				top: 25px;
+				
+				width: 50px;
+				height: 40px;
+				
+				background: url(.png);
+			}.back img{
+				position: absolute;
+				left: 60px;
+				top: 25px;
+				
+				width: 50px;
+				height: 40px;
+				
+				background: url(.png);
+			}
+		
+			.rect1 {
+				position: absolute;
+				width: 351px;
+				height: 70px;
+				left: 100px;
+				top: 140px;
+
+				background: #01194F;
+				border-radius: 15px;
+				
+				font-family: Sacramento;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 35px;
+
+				text-align: center;
+				color: #FFFFFF;
+			}
+			.rect2 {
+				position: absolute;
+				width: 644px;
+				height: 70px;
+				left: 463px;
+				top: 140px;
+
+				
+				background: #01194F;
+				border-radius: 15px;
+				
+				font-family: Sacramento;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 35px;
+
+				text-align: center;
+				color: #FFFFFF;
+			}
+			.rect3 {
+				position: absolute;
+				width: 351px;
+				height: 160px;
+				left: 100px;
+				top: 240px;
+
+				background: #D7DCDD;
+				border-radius: 15px;
+				
+				font-family: Sacramento;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 35px;
+
+				text-align: center;
+
+				color: #121212;
+			}
+			.rect4 {
+				position: absolute;
+				width: 351px;
+				height: 80px;
+				left: 100px;
+				top: 420px;
+
+				background: #D7DCDD;
+				border-radius: 15px;
+				
+				font-family: Sacramento;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 35px;
+
+				text-align: center;
+
+				color: #121212;
+			}
+			.rect5 input {
+				position: absolute;
+				width: 644px;
+				height: 80px;
+				left: 465px;
+				top: 239px;
+
+				background: #BAEEFF;
+				border-radius: 15px;
+				
+				font-family: Sacramento;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 35px;
+
+				text-align: center;
+
+				color: #121212;
+			}
+			.rect6 input{
+				position: absolute;
+				width: 644px;
+				height: 60px;
+				left: 465px;
+				top: 339px;
+
+				background: #BAEEFF;
+				border-radius: 15px;
+				
+				font-family: Sacramento;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 35px;
+
+				text-align: center;
+
+				color: #121212;
+			}
+			.rect7 input{
+				position: absolute;
+				width: 644px;
+				height: 80px;
+				left: 465px;
+				top: 419px;
+
+				background: #BAEEFF;
+				border-radius: 15px;
+				
+				font-family: Sacramento;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 35px;
+
+				text-align: center;
+
+				color: #121212;
+			}
+			.add input{
+				position: absolute;
+				width: 53px;
+				height: 50px;
+				left: 755px;
+				top: 639px;
+				
+				background: #BAEEFF;
+				border-radius: 30px;
+				
+				font-family: Sacramento;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 35px;
+
+				text-align: center;
+				color: #121212;
+			}
+			.ellipse1 {
+				position: absolute;
+				width: 6px;
+				height: 6px;
+				left: 1078px;
+				top: 455px;
+
+				background: #01194F;
+				
+				border-radius: 30px;
+			}
+			.ellipse2 {
+				position: absolute;
+				width: 23px;
+				height: 23px;
+				left: 1076px;
+				top: 429px;
+
+				background: #01194F;
+				
+				border-radius: 30px;
+			}
+			.rect8 {
+				position: absolute;
+				width: 351px;
+				height: 80px;
+				left: 100px;
+				top: 518px;
+
+				background: #D7DCDD;
+				border-radius: 15px;
+				
+				font-family: Sacramento;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 35px;
+
+				text-align: center;
+
+				color: #121212;
+			}
+			.rect9 {
+				position: absolute;
+				width: 644px;
+				height: 80px;
+				left: 465px;
+				top: 519px;
+
+				background: #BAEEFF;
+				border-radius: 15px;
+				
+				font-family: Sacramento;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 35px;
+
+				text-align: center;
+
+				color: #121212;
+			}
+			.polygon {
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				left: 411px;
+				top: 525px;
+
+				background: #121212;
+				transform: rotate(-45deg);
+				
+				clip-path: polygon(0 0, 0 10px, 10px 10px); 
+				shape-outside: polygon(0, 0, 0, 10px, 10px, 10px);
+			}
+			
+			.vector {
+				position: absolute;
+				width: 120px;
+				height: 280px;
+				left: 1011px;
+				top: 525px;
+				
+				transform: rotate(-90deg);
+			}
+        </style>
+    </head>
+<body>
+
+	<div class="back">
+		<img src="../resources/back.png" >
+		<input type="button" onclick="location.href='3.html';">
+	</div>
+
+	<div class="rect1">
+		<p>Операционный сервис</p>
+	</div>
+	
+	<div class="vector">
+		<img src="../resources/vector.png" >
+	</div>
+	
+	<div class="rect2"><p>Описание ситуации</p></div>
+	<div class="rect3"><p>ЦОД</p></div>
+	<div class="rect4"><p>Управление услугами</p></div>
+	<div class="rect5"><input type="button" onclick="location.href='5.html';" value="Недоступность сервиса из-за большого количества юзеров"></input></div>
+	<div class="rect6"><input type="button" onclick="location.href='6.html';" value="Отсутствие резервного копирования"></input></div>
+	<div class="rect7"><input type="button" onclick="location.href='7.html';" value="Нехватка квалифицированного персонала"></input></div>
+	<div class="add">
+		<input type="button" value="+">
+	</div>
+	
+	<div class="ellipse1"></div>
+	<div class="ellipse2"></div>
+	
+	<div class="rect8">Название сервиса</div>
+	<div class="rect9">Новая ситуация</div>
+	
+	<div class="polygon"></div>
+</body>
+</html>
